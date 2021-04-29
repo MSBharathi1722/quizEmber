@@ -1,0 +1,41 @@
+.display{
+  padding-top: 50px;
+  width: 100%;
+  height:800px;
+  background-image:linear-gradient(to right, #56ccf2, #2f80ed);
+}
+.container{
+  margin: auto;
+  padding-top: 50px;
+  border: 10px inset green;
+  width: 70%;
+  height: 400px;
+}
+.disp-Qns{
+  text-align: center;
+  font-size: 25px;
+  width: 100%;
+  height: 100px;
+}
+.disp-Ans{
+  text-align: center;
+}
+h1,h2{
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 50px;
+}
+.ans_button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 25px;
+}
+#playAgain{
+  text-decoration: none;
+  color:black;
+}

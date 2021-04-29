@@ -1,0 +1,20 @@
+
+  <h1>The Quiz</h1>
+  <div class="container">
+    <div class="disp-Qns">
+      <h2>{{this.temp.question}}</h2>
+    </div>
+    <div class="disp-Ans">
+      {{#each this.temp.answers as |item|}}
+        {{!-- template-lint-disable require-input-label --}}
+        <input class="ans_button" type="button" value={{item}}  {{on 'click' (fn this.start item)}}/>
+      {{/each}}
+      <h1>Score:{{this.score}}</h1>
+    </div>
+    <div class="score"><h2>
+      {{#if this.finished}}
+            <h2>You have Scored {{this.score}}/100</h2>
+            <LinkTo id="playAgain" @route="category">Play Again?</LinkTo>
+      {{/if}}
+    </h2></div>
+  </div>
